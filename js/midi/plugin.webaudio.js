@@ -171,6 +171,7 @@
 			for (var n = 0, note, len = chord.length; n < len; n++) {
 				res[note = chord[n]] = midi.noteOn(channel, note, velocity, delay);
 			}
+
 			return res;
 		};
 
